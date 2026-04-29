@@ -38,17 +38,17 @@ public class EmployeePage extends BasePage {
     }
 
     public void fillFullEmployeeDetails(String fname, String mname, String lname, String loginUser, String loginPass) {
-        System.out.println("[Dhathri-Log] Clicking Add Button...");
+        System.out.println("[Samanvitha-Log] Clicking Add Button...");
         click(addButton);
         
         // Fill basic names
-        System.out.println("[Dhathri-Log] Filling Name Details...");
+        System.out.println("[Samanvitha-Log] Filling Name Details...");
         waitForElementVisible(firstNameField).sendKeys(fname);
         sendKeys(middleNameField, mname);
         sendKeys(lastNameField, lname);
         
         // Step: Click the toggle to show login details
-        System.out.println("[Dhathri-Log] Toggling Create Login Details...");
+        System.out.println("[Samanvitha-Log] Toggling Create Login Details...");
         click(loginDetailsToggle);
         
         // Fill credentials
@@ -57,7 +57,7 @@ public class EmployeePage extends BasePage {
         sendKeys(passwordField, loginPass);
         sendKeys(confirmPasswordField, loginPass);
         
-        System.out.println("[Dhathri-Log] Saving Employee...");
+        System.out.println("[Samanvitha-Log] Saving Employee...");
         click(saveButton);
     }
 
@@ -66,7 +66,7 @@ public class EmployeePage extends BasePage {
             // Wait for toaster to appear to confirm success
             return waitForElementVisible(successToast).isDisplayed();
         } catch (Exception e) {
-            System.out.println("[Dhathri-Log] Success Toast not found - check for validation errors.");
+            System.out.println("[Samanvitha-Log] Success Toast not found - check for validation errors.");
             return false;
         }
     }

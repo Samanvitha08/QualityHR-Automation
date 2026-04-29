@@ -30,7 +30,7 @@ public class LeavePage extends BasePage {
     }
 
     public void assignLeaveStep(String fullName, String start, String end) {
-        System.out.println("[Dhathri-Log] Navigating to Assign Leave...");
+        System.out.println("[Samanvitha-Log] Navigating to Assign Leave...");
         driver.get(assignUrl);
 
         // Select Employee
@@ -52,7 +52,7 @@ public class LeavePage extends BasePage {
     }
 
     public boolean verifyLeaveList() {
-        System.out.println("[Dhathri-Log] Verifying in Leave List...");
+        System.out.println("[Samanvitha-Log] Verifying in Leave List...");
         driver.get(leaveListUrl);
         // If we successfully reach the list and see "Records Found", we pass
         return driver.getCurrentUrl().contains("viewLeaveList");

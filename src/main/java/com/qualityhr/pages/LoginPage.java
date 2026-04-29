@@ -12,7 +12,7 @@ public class LoginPage extends BasePage {
     public LoginPage(WebDriver driver) { super(driver); }
 
     public void login(String user, String pass) {
-        System.out.println("[Dhathri-Log] Initiating Login...");
+        System.out.println("[Samanvitha-Log] Initiating Login...");
         sendKeys(usernameField, user);
         sendKeys(passwordField, pass);
         click(loginBtn);

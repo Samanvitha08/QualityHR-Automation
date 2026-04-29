@@ -9,7 +9,7 @@ public class LeaveTest extends BaseTest {
 
     @Test
     public void testFinalStableLeaveFlow() {
-        System.out.println(">>> STARTING FINAL SUBMISSION RUN - DHATHRI PUTTY <<<");
+        System.out.println(">>> STARTING FINAL SUBMISSION RUN - Samanvitha <<<");
         
         // 1. Login
         LoginPage login = new LoginPage(driver);

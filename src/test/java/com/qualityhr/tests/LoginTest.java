@@ -7,8 +7,8 @@ import org.testng.annotations.Test;
 public class LoginTest extends BaseTest {
 
     @Test(priority = 1)
-    public void testValidLoginDhathri() {
-        System.out.println(">>> STARTING LOGIN TEST - DHATHRI PUTTY <<<");
+    public void testValidLoginSamanvitha() {
+        System.out.println(">>> STARTING LOGIN TEST - SAMANVITHA NADELLA <<<");
         
         LoginPage loginPage = new LoginPage(driver);
         

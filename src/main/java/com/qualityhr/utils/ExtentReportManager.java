@@ -11,12 +11,12 @@ public class ExtentReportManager {
         if (extent == null) {
             new File("reports").mkdirs();
             ExtentSparkReporter spark = new ExtentSparkReporter("reports/index.html");
-            spark.config().setReportName("QualityHR Automation - Dhathri Putty");
-            spark.config().setDocumentTitle("Dhathri's QA Report");
+            spark.config().setReportName("QualityHR Automation - Samanvitha");
+            spark.config().setDocumentTitle("Samanvitha's QA Report");
 
             extent = new ExtentReports();
             extent.attachReporter(spark);
-            extent.setSystemInfo("QA Engineer", "Dhathri Putty");
+            extent.setSystemInfo("QA Engineer", "Samanvitha");
             extent.setSystemInfo("Environment", "Production-Demo");
         }
         return extent;

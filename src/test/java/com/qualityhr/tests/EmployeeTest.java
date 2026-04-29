@@ -13,7 +13,7 @@ public class EmployeeTest extends BaseTest {
     public Object[][] getEmployeeData() {
         return new Object[][] {
             // Format: {FirstName, MiddleName, LastName, NewUserName, NewPassword}
-            { "Dhathri", "QA", "Putty", "dhathri_user_" + System.currentTimeMillis(), "Pass12345!" }
+            { "Samanvitha", "QA", "Putty", "Samanvitha_user_" + System.currentTimeMillis(), "Pass12345!" }
         };
     }
 
