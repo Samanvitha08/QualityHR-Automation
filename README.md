@@ -1,17 +1,30 @@
-QualityHR-Automation is a Selenium-based automation framework.
-It is built using Java and TestNG.
-The framework follows the Page Object Model (POM) design.
+Project: QualityHR-Automation
 
-The src/main/java folder contains core framework code.
-The base package contains reusable methods.
-The driver package handles browser initialization.
-The pages package contains all webpage classes.
-The utils package provides helper functions like config, waits, and reports.
+Type: Selenium Test Automation Framework
+Language: Java
+Framework: TestNG
+Design Pattern: Page Object Model (POM)
 
-The src/main/resources folder stores configuration files and test data.
 
-The src/test/java folder contains test cases and listeners.
-The tests package includes all test classes.
-The listeners package manages reporting and logging.
 
-The reports folder stores test execution results.
+Core Layer (src/main/java):
+- base        : Common reusable methods (BasePage)
+- driver      : WebDriver setup and management (DriverFactory)
+- pages       : Page classes for UI interaction (Login, Admin, Employee, Leave)
+- utils       : Helper classes (ConfigReader, WaitHelper, ExtentReportManager)
+
+
+
+Resources (src/main/resources):
+- config.properties : Application configuration
+- testdata.xlsx     : Test data input
+
+
+Test Layer (src/test/java):
+- tests     : Test cases (LoginTest, AdminTest, etc.)
+- listeners : Test execution tracking and reporting
+
+
+
+Output:
+- reports : Stores execution results and reports
